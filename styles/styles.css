@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans";
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.welcome {
+  background-image: url(../images/index_background.jpg);
+  background-repeat: no-repeat;
+}
+
+.welcome-decoration {
+  background-image: url(../images/decorate_header.svg);
+  background-repeat: no-repeat;
+  height: 57px;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 1);
+  color: #fff;
+}
+
+.advantages-item:nth-child(2n+3) {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: black;
+}
+
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+  color: black;
+}
+
+.advantages-subitem:nth-child(2n+1) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.subscribe {
+  background-image: url(../images/subscribe_background.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 411px;
+}
+
+.filter_block {
+  background-image: url(../images/catalog_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.inner-header a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a.button {
+  display: inline-block;
+}
+
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  height: 60px;
+  border: none;
+}
+
+.button-brown {
+  background: rgba(117, 97, 87, 1);
+}
+
+.button-blue {
+  background: rgba(130, 179, 211, 1);
+}
+
+.button-green {
+  background: rgba(125, 181, 79, 1);
+}
+
+input {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.rate-text {
+  display: inline-block;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.stars li {
+  background-image: url(../images/catalog/star.svg);
+  background-repeat: no-repeat;
+}
+
