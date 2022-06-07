@@ -14,23 +14,54 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  display: none;
+}
+
+.navigation li {
+  display: inline;
+  list-style: none;
+  font-weight: 700;
+}
+.search::before {
+  content: url(../images/search.svg);
+}
+
+.favorite::before {
+  content: url(../images/favorite.svg);
+}
+
 body {
   font-family: "PT Sans";
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
+.visually-hidden {
+  display: none;
 }
 
-h2 {
+.search-hotel span {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
-h3 {
+.telnumber {
+  font-size: 40px;
+}
+
+.headline_1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.headline_2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.headline_3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -39,6 +70,10 @@ h3 {
 .welcome {
   background-image: url(../images/index_background.jpg);
   background-repeat: no-repeat;
+}
+
+.welcome-footer h2 {
+  text-transform: uppercase;
 }
 
 .welcome-decoration {
@@ -89,6 +124,9 @@ a {
   color: black;
 }
 
+li {
+  list-style: none;
+}
 a.button {
   display: inline-block;
 }
@@ -100,6 +138,20 @@ a.button {
   border-radius: 5px;
   height: 60px;
   border: none;
+  text-align: right;
+}
+
+.begin-price, .end-price {
+  height: 48px;
+  border: 2px #fff solid;
+  border-radius: 4px;
+  color: #fff;
+  background: transparent;
+  padding-right: 15px;
+}
+
+.begin-price, .end-price::placeholder {
+  text-align: end;
 }
 
 .button-brown {
@@ -124,7 +176,56 @@ input {
 }
 
 .stars li {
-  background-image: url(../images/catalog/star.svg);
+  display: inline;
   background-repeat: no-repeat;
+}
+
+.stars span::before {
+  content: url(../images/catalog/star.svg);
+}
+
+.social-list li {
+  display: inline;
+  list-style: none;
+}
+
+.social-vk::before {
+  content: url(../images/vkontakte_icon.svg);
+}
+
+.social-telegramm::before {
+  content: url(../images/telegram_icon.svg);
+}
+
+.social-youtube::before {
+  content: url(../images/youtube_icon.svg);
+}
+
+.pagination-item {
+  display: inline-block;
+  text-align: center;
+
+}
+
+.pagination-link {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 4px;
+  line-height: 55px;
+  background-color: rgba(130, 179, 211, 1);
+}
+
+.breadcrubs-item {
+  display: inline;
+  list-style: none;
+}
+
+.home_page::after {
+  content: url(../images/breadcrubs_home.svg);
+}
+
+.breadcrubs_arrow::before{
+  content: url(../images/arrow.svg);
 }
 
