@@ -39,15 +39,17 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main_index">
+      <div class="container">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="welcome">
-        <img
-          class="welcome-img"
+        <div class="welcome-img">
+          <img
           src="images/welcome.svg"
           width="458"
           height="352"
         />
+        </div>
         <div class="welcome-decoration"></div>
       </section>
       <section class="advantages">
@@ -57,35 +59,49 @@
         </div>
         <h2 class="visually-hidden headline_2">Преимущества</h2>
         <ol class="advantages-list">
-          <li class="advantages-item">
-            <div>
+          <li class="advantages-item dark">
               <h3 class="advantage-name headline_3">Настоящий городок</h3>
               <span class="advantage-number">— №1 —</span>
               <p class="advantage-description">
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
-            </div>
-            <img
+          </li>
+          <img
               src="images/advantage_1.jpg"
               width="800"
               height="384"
               alt="Городок Седона"
             />
-          </li>
-          <li class="advantages-item">
-            <img
+            <li class="advantages-item sub_item">
+              <h3 class="advantage-name headline_3">Жильё</h3>
+              <p class="advantage-description">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
+            </li>
+            <li class="advantages-item sub_item">
+              <h3 class="advantage-name headline_3">Еда</h3>
+              <p class="advantage-description">
+                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+            <li class="advantages-item sub_item">
+              <h3 class="advantage-name headline_3">Сувениры</h3>
+              <p class="advantage-description">
+                Не только китайского, но и настоящего местного производства!
+              </p>
+            </li>
+          <img
               src="images/advantage_2.jpg"
               width="800"
               height="384"
               alt="Мост дьявола"
             />
-            <div>
+          <li class="advantages-item dark">
               <h3 class="advantage-name headline_3">Там есть мост дьявола</h3>
               <span class="advantage-number">— №2 —</span>
               <p class="advantage-description">
                 Да, по нему можно пройти! Если вы осмелитесь, разумеется
               </p>
-            </div>
           </li>
           <li class="advantages-item">
             <h3 class="advantage-name headline_3">Небольшая площадь</h3>
@@ -110,28 +126,10 @@
           </li>
         </ol>
         <ul class="advantages-sublist">
-          <li class="advantages-subitem">
-            <h3 class="advantage-name headline_3">Жильё</h3>
-            <p class="advantage-description">
-              Рекомендуем пожить в настоящем мотеле, всё как в кино!
-            </p>
-          </li>
-          <li class="advantages-subitem">
-            <h3 class="advantage-name headline_3">Еда</h3>
-            <p class="advantage-description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-            </p>
-          </li>
-          <li class="advantages-subitem">
-            <h3 class="advantage-name headline_3">Сувениры</h3>
-            <p class="advantage-description">
-              Не только китайского, но и настоящего местного производства!
-            </p>
-          </li>
         </ul>
       </section>
       <section class="search-hotel">
-        <h2 class="visually-hidden headline_2">Поиск гостиницы</h2>
+          <h2 class="visually-hidden headline_2">Поиск гостиницы</h2>
         <p><span>Заинтересовались?</span></p>
         <p>
           Укажите предполагаемые даты поездки,и мы покажем вам лучшие
@@ -140,7 +138,7 @@
         <a class="button button-brown" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="subscribe">
-        <h2 headline_2>Подпишитесь на рассылку</h2>
+        <h2 headline_2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
@@ -149,6 +147,7 @@
           <button class="button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
+    </div>
     </main>
     <footer>
       <ul class="social-list">
