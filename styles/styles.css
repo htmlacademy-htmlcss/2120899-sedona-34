@@ -263,11 +263,12 @@ footer {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .advantage-image {
   grid-column: span 2;
+  height: 384px;
 }
 
 .advantages-item {
