@@ -13,7 +13,7 @@
       <header class="page-header">
         <nav class="navigation">
           <div class="navigation-list-wraper">
-            <a class="logo" href="index.html">
+            <a class="logo">
               <img src="images/logo.svg" height="70" width="139" alt="Логотип" />
             </a>
             <ul class="navigation-list">
@@ -23,19 +23,20 @@
               <li class="navigation-item">
                 <a class="navigation-link" href="#">О Седоне</a>
               </li>
-              <li class="navigation-item  current-page">
+              <li class="navigation-item current-page">
                 <a class="navigation-link" href="#">Гостиницы</a>
               </li>
             </ul>
           </div>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-user-item">
               <a class="navigation-link search" href="#">
-                <span class="visually-hidden"> Поиск </span>
               </a>
+              <span class="visually-hidden"> Поиск </span>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-user-item">
               <a class="navigation-link favorite" href="#">
+                <span class="circle">11</span>
                 <span class="visually-hidden"> Избранное </span>
               </a>
             </li>
@@ -70,32 +71,32 @@
                 <div class="filter_type_wrapper">
                   <fieldset class="fieldset infra">
                     <legend>Инфраструктура:</legend>
-                    <label>
+                    <input type="checkbox" name="swimming-pool" id="swimming-pool" checked />
+                    <label for="swimming-pool">
                       Бассейн
-                      <input type="checkbox" name="swimming-pool" checked />
                     </label>
-                    <label>
+                    <input type="checkbox" name="parking" id="parking" checked />
+                    <label for="parking">
                       Парковка
-                      <input type="checkbox" name="parking" checked />
                     </label>
-                    <label>
+                    <input type="checkbox" name="wi-fi" id="wi-fi" />
+                    <label for="wi-fi">
                       Wi-Fi
-                      <input type="checkbox" name="wi-fi" />
                     </label>
                   </fieldset>
                   <fieldset class="fieldset type">
-                    <legend>Тип жилья:</legend>
-                    <label>
+                    <legend>Тип Жилья:</legend>
+                    <input type="radio" name="type" value="Hotel" id="Hotel"/>
+                    <label for="Hotel">
                       Гостиница
-                      <input type="radio" name="type" value="Hotel" />
                     </label>
-                    <label>
+                    <input type="radio" name="type" value="Motel" id="Motel"/>
+                    <label for="Motel">
                       Мотель
-                      <input type="radio" name="type" value="Motel" />
                     </label>
-                    <label>
-                      Аппартаменты
-                      <input type="radio" name="type" value="Apartments" />
+                    <input type="radio" name="type" value="Apartments" id="Apartments"/>
+                    <label for="Apartments">
+                      Апартаменты
                     </label>
                   </fieldset>
                 </div>
@@ -103,7 +104,13 @@
                   <legend>Стоимость, ₽:</legend>
                   <input class="begin-price" name="begin-price" type="text" placeholder="от" />
                   <input class="end-price" name="end-price" type="text" placeholder="до" />
-                  <input type="range" min="0" max="10000" step="100" value="9000" />
+                  <div class="range">
+                    <div class="scale-long"></div>
+                    <div class="range-scale">
+                      <button class="range-min"><span class="visually-hidden">Минимальное значение</span></button>
+                      <button class="range-max"><span class="visually-hidden">Максимальное значение</span></button>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="filter_buttons_wrapper">
                   <button class="button button-blue accept-button" type="submit">Применить</button>
@@ -118,7 +125,7 @@
           <h3 class="count-of-hotels headline_3">Найдено гостиниц: 38</h3>
           <select class="sort" aria-label="Сортировка">
             <option value="popular">Сначала популярное</option>
-            <option value="cheap">Сначала дешёвое</option>
+            <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
           <ul class="view-list">
@@ -264,6 +271,7 @@
         </section>
       </main>
       <footer>
+        <div class="footer-wraper">
         <ul class="social-list">
           <li>
             <a class="social-vk" href="https://vk.com/htmlacademy">
@@ -281,10 +289,11 @@
             </a>
           </li>
         </ul>
-        <a class="telnumber" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <a class="telnumber" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
           <img src="images/htmlacademy_logo.svg" width="115" height="34" alt="Логотип htmlacademy" />
         </a>
+      </div>
       </footer>
     </div>
   </body>
